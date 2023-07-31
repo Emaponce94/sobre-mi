@@ -1,0 +1,103 @@
+@import  url(https://fonts.google.com/specimen/Montserrat?preview.text=MONTSE&preview.text_type=custom);
+html {
+    background-color: rgba(150, 147, 147, 0.452);
+    font-size: 24px;
+    font-weight: semibold;
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100px; 
+    background-color: rgb(255, 255, 255);
+}
+.titulo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.titulo-container h1 {
+    margin: 0; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.perfil {
+    flex: 1;
+}
+
+.perfil ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.perfil li {
+    margin-bottom: 10px; 
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imagen img {
+    margin-bottom: 10px;
+}
+
+aside {
+    text-align: center; 
+}
+
+aside ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+aside li {
+    margin-bottom: 10px; 
+}
+
+
+
+.sin-negrita li {
+font-weight: normal;
+}/* solo quiero que los subtitulos sean en negrita */
+.multimedia {
+    display: flex  ;
+    justify-content: center;
+}
+.Multimedia img {
+    margin-right: 20px;
+    flex: 1;
+    max-width: 365px;
+    height: auto; 
+  }
+  
+  .Multimedia video {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 650px;
+    height: auto; 
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Puedes ajustar el color de fondo según tus preferencias */
+    height: 80px; /* Ajusta la altura del footer según tus necesidades */
+}
+
+.footer {
+    text-align: center;
+}
