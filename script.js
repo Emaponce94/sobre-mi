@@ -1,19 +1,20 @@
 // Función para mostrar u ocultar el contenido
-function toggleContent() {
+function toggleContent(event) {
+  event.preventDefault(); 
   const contentDiv = document.querySelector(".content");
-  const toggleButton = document.getElementById("toggle-content");
+  const toggleLink = document.getElementById("toggle-content");
 
   if (contentDiv.style.display === "none") {
     contentDiv.style.display = "block";
-    toggleButton.textContent = "Ocultar contenido";
+    toggleLink.textContent = "▲ Un poco de lo que me gusta hacer y apasiona";
   } else {
     contentDiv.style.display = "none";
-    toggleButton.textContent = "Mostrar contenido";
+    toggleLink.textContent = "▼ Un poco de lo que me gusta hacer y apasiona";
   }
 }
 
+const toggleLink = document.getElementById("toggle-content");
 
-const toggleButton = document.getElementById("toggle-content");
 
+toggleLink.addEventListener("click", toggleContent);
 
-toggleButton.addEventListener("click", toggleContent);
