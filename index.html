@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html land = "es">
+<html lang="es">
 <head>
-  <body>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style.css"/>  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> <!-- Importo fonts desde google-->
+  <link rel="stylesheet" href="Style.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"><!--importo fonts desde google-->
   <title>Resumen del Alumno</title>
-  </head>
-    <header>
-      <div class="titulo-container">
+</head>
+<body>
+  <header>
+    <div class="titulo-container">
       <h1>Información Personal</h1>
-      </header>
-      <nav>
-        <div class="perfil">
-            <ul class="sin-negrita">
-                <li>Nombre: Emanuel David</li>
-                <li>Apellido: Ponce</li> 
-                <li>Fecha de Nacimiento: 16/12/1994</li>
-                <li>Edad: 28 años</li>
-                <li>País: Argentina</li>
-                <li>Ciudad: Córdoba, Capital</li>
-                <li>Estado Civil: Casado</li>
-            </ul>
-        </div>
-        <div class="imagen">
-            <img src="./img/IMG_20230730_014812725_HDR.jpg" alt="Perfil" width="200px">
-            <aside>
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/emanueldavidponce" target="_blank">Mi perfil de Linkedin</a></li>
-                    <li><a href="template/index.html"target="_blank">Template</a></li>
-                </ul>
-            </aside>
-        </div>
-    </nav>
-    
-    
-          <section>
-<h2>Educación</h2> 
-<ul class="sin-negrita">
-  <li>Secundario Arturo Jauretche IPEM 114</li>
-  <li>Analista de sistemas informáticos, Manuel Belgrano (Incompleto)</li>
-  <li>Reparación de PC, Instituto Cervantes</li>
-</ul>
-</section>
-<section>
-           <article>
-             <h2>Intereses</h2>
-             <ul class="sin-negrita">
-              <li>Tecnología </li>
-              <li>Música</li>
-              <li>Programación</li>
-             </ul>
-           </article>
-          </section>
-          <section>
-           <article>
-             <h2><strong>Un poco de lo que me gusta hacer y apasiona</strong></h2>
-             <div class="Multimedia">
-             <img src="./img/jun23-cvn_feed1.jpg" alt="Imagen banda CVN" width="365px">
-           
-             <video src="./video/Amarte así  - C.V.N.mp4" type="video/mp4" width= "650" height="200" controls>
-           </article>
-          </section>
-            <article>
-              <h2>Experiencia</h2>
-              <ul class="sin-negrita">
-                <li>Actualmente: Operario de producción, Tiberina Automotive AR, desde 2019 - actualmente.</li>
-              </ul>
-            </article>
-        </main>
-        <footer>
-          <div class="footer">
-          © copyright Emanuel David Ponce  2023
-        </footer>
-    </body>
-  </html>
+    </div>
+  </header>
+
+  <nav>
+    <div class="perfil">
+      <ul class="sin-negrita">
+        <li>Nombre: Emanuel David</li>
+        <li>Apellido: Ponce</li> 
+        <li>Fecha de Nacimiento: 16/12/1994</li>
+        <li>Edad: 28 años</li>
+        <li>País: Argentina</li>
+        <li>Ciudad: Córdoba, Capital</li>
+        <li>Estado Civil: Casado</li>
+      </ul>
+    </div>
+    <div class="imagen">
+      <img src="./img/IMG_20230730_014812725_HDR.jpg" alt="Perfil" width="200px">
+      <aside>
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/emanueldavidponce" target="_blank">Mi perfil de Linkedin</a></li>
+          <li><a href="template/index.html"target="_blank">Template</a></li>
+        </ul>
+      </aside>
+    </div>
+  </nav>
+
+  <section>
+    <article>
+      <h2>Educación</h2> 
+      <ul class="sin-negrita">
+        <li>Secundario Arturo Jauretche IPEM 114</li>
+        <li>Analista de sistemas informáticos, Manuel Belgrano (Incompleto)</li>
+        <li>Reparación de PC, Instituto Cervantes</li>
+      </ul>
+    </article>
+  </section>
+  <section>
+    <article>
+      <h2>Intereses</h2>
+      <ul class="sin-negrita">
+       <li>Tecnología </li>
+       <li>Música</li>
+       <li>Programación</li>
+      </ul>
+    </article>
+   </section>
+
+  <section>
+    <article>
+      <h2><strong>Un poco de lo que me gusta hacer y apasiona</strong></h2>
+      <button id="toggle-content">Mostrar contenido</button>
+      <div class="content">
+        <img src="./img/jun23-cvn_feed1.jpg" alt="Imagen banda CVN" width="365px">
+        <video src="./video/Amarte así  - C.V.N.mp4" type="video/mp4" width= "650" height="200" controls>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>Experiencia</h2>
+      <ul class="sin-negrita">
+        <li>Actualmente: Operario de producción, Tiberina Automotive AR, desde 2019 - actualmente.</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
+    <div class="footer">
+      © copyright Emanuel David Ponce 2023
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

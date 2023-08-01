@@ -101,3 +101,37 @@ font-weight: normal;
 .footer {
     text-align: center;
 }
+
+/* Resto del código CSS */
+
+/* Estilos para el botón */
+button#toggle-content {
+    background-color: #404041;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  div.content {
+    display: none; 
+    margin-top: 10px;
+  }
+  
+  
+  div.content video {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+
+  div.content[style="display: block;"] {
+    
+    background-color:rgba(150, 147, 147, 0.452);
+    padding: 10px;
+  }
+  
+  
