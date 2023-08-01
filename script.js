@@ -12,8 +12,8 @@ function toggleContent() {
   }
 }
 
-// Obtenemos el botón por su ID
+
 const toggleButton = document.getElementById("toggle-content");
 
-// Agregamos un evento de clic al botón
+
 toggleButton.addEventListener("click", toggleContent);
