@@ -87,15 +87,15 @@ font-weight: normal;
   .Multimedia video {
     flex: 1;
     margin-left: 20px;
-    max-width: 650px;
+    max-width: 100% ;
     height: auto; 
   }
   footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Puedes ajustar el color de fondo según tus preferencias */
-    height: 80px; /* Ajusta la altura del footer según tus necesidades */
+    background-color: #f0f0f0;
+    height: 80px; 
 }
 
 .footer {
