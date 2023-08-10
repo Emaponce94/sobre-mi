@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de la calculadora */
+.calculator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.logo {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 5px;
+  
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
