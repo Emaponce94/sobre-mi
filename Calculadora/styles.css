@@ -52,3 +52,8 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.clear {
+    background-color: #f44336; /* Cambia el color de fondo para el botón de limpiar */
+    margin-left: 10px; /* Añade un margen para separarlo del botón de calcular */
+}
