@@ -1,59 +1,62 @@
 /* Estilos generales */
 body {
+    background-image: url("img/2111.w039.n003.5B.p1.5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
-}
-
-/* Estilos del encabezado */
-.header {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.header-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
-/* Estilos de la calculadora */
+/* Estilos para la calculadora */
 .calculator {
     text-align: center;
-    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+    padding: 20px;
+    border-radius: 20px; /* Bordes curvos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho fijo */
 }
 
-
-.logo {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
+/* Estilos para el título */
 .title {
-    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Aumenta el margen inferior para más espacio */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-input, select, button {
-    margin: 5px;
-    padding: 5px;
-  
+/* Estilos para los campos de entrada y selección */
+.input-field {
+    margin: 15px 0; /* Aumenta el margen vertical para más espacio */
 }
 
-button {
-    background-color: #4CAF50; 
-    color: white; 
-    border: none;
+/* Estilos para los botones */
+.button {
+    background-color: #007bff;
+    color: white;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Agrega espacio entre los botones */
 }
 
-
-button:hover {
-    background-color: #45a049;
+.button:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
 }
 
-.clear {
-    background-color: #f44336; /* Cambia el color de fondo para el botón de limpiar */
-    margin-left: 10px; /* Añade un margen para separarlo del botón de calcular */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el resultado */
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }

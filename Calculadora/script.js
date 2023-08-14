@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Obtiene una referencia al botón de cálculo, al botón de limpiar y al párrafo de resultado
     const calculateButton = document.getElementById('calculate');
-    const clearButton = document.getElementById('clear'); // Agrega referencia al botón de limpiar
+    const clearButton = document.getElementById('clear');
     const resultParagraph = document.getElementById('result');
 
     // Agrega un evento de clic al botón de cálculo
@@ -18,21 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Verifica si la cantidad de caracteres en los operandos excede el límite (20 caracteres)
+        if (operand1.toString().length > 20 || operand2.toString().length > 20) {
+            alert('La cantidad de caracteres ingresados en los operandos es demasiado grande.');
+            return;
+        }
+
         // Inicializa una variable para almacenar el resultado de la operación
         let result;
 
         // Utiliza una estructura de selección (switch) para realizar la operación correspondiente
         switch (operator) {
-            case 'sum':
+            case 'suma':
                 result = operand1 + operand2;
                 break;
-            case 'subtract':
+            case 'resta':
                 result = operand1 - operand2;
                 break;
-            case 'multiply':
+            case 'multiplicacion':
                 result = operand1 * operand2;
                 break;
-            case 'divide':
+            case 'division':
                 // Maneja el caso especial de la división por cero
                 if (operand2 !== 0) {
                     result = operand1 / operand2;
@@ -54,11 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Agrega un evento de clic al botón de limpiar
     clearButton.addEventListener('click', () => {
         // Limpia los campos de operandos y el párrafo de resultado
-        document.getElementById('operand1').value = ''; // Limpia el campo Operando 1
-        document.getElementById('operand2').value = ''; // Limpia el campo Operando 2
-        resultParagraph.textContent = ''; // Limpia el párrafo de resultado
+        document.getElementById('operand1').value = '';
+        document.getElementById('operand2').value = '';
+        resultParagraph.textContent = '';
     });
 });
+
 
 
 

@@ -14,7 +14,7 @@ Para utilizar la calculadora, sigue estos pasos:
 La calculadora también incluye una funcionalidad de limpiar campos, simplemente haz clic en el botón "Limpiar" para borrar los valores ingresados.
 
 ## Explicación de Código
-
+En distintas líneas de código se va encontrar el comentario para recordar para que sirve cada línea.
 ### Validación de Errores y Números Pequeños
 
 El código de JavaScript (`script.js`) contiene una lógica para garantizar que los valores ingresados sean números válidos y para evitar resultados demasiado grandes o pequeños:
@@ -25,6 +25,16 @@ El código de JavaScript (`script.js`) contiene una lógica para garantizar que 
 ### Validación de Resultados
 
 - Luego de realizar la operación seleccionada, el código verifica si el resultado es igual a `Infinity` o `-Infinity`. Estos valores representan situaciones en las que el resultado es demasiado grande (positivo o negativo) para ser manejado como un número finito. Si ocurre, se muestra un mensaje de error correspondiente en el párrafo de resultado.
+ ### Notación Cientifica 
+     // Verifica si el resultado es demasiado grande o pequeño para ser mostrado en la interfaz
+        if (result === Infinity || result === -Infinity) {
+            resultParagraph.textContent = 'Error: Resultado demasiado grande o pequeño';
+        } else {
+            // Muestra el resultado en el párrafo de resultado
+            resultParagraph.textContent = `Resultado: ${result}`;
+        }
+    });
+Atravez del siguiente fragmento del codigo se abre la pocibilidad de recibir numeros en notación cientifica.
 
 ## Autor
 
