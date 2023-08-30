@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Piedra, Papel o Tijera</h1>
+        <div class="player-name">
+            <label for="name">Ingresa tu nombre: </label>
+            <input type="text" id="name" />
+        </div>
+        <div class="settings">
+            <label for="max-rounds">Maximo de Partidas:</label>
+            <input type="number" id="max-rounds" value="5">
+        </div>
+        <div class="options">
+            <img src="img/stone-block_38841.ico" alt="Piedra" class="option" data-option="Piedra">
+            <img src="img/paper_icon-icons.com_72301.ico" alt="Papel" class="option" data-option="Papel">
+            <img src="img/scissorminimono_105779.ico" alt="Tijera" class="option" data-option="Tijeras">
+        </div>
+        <div class="results">
+            <p>Elige una opción para empezar.</p>
+        </div>
+        <div class="score">
+            <p>Jugador: <span id="player-score">0</span></p>
+            <p>PC: <span id="pc-score">0</span></p>
+            <p>Empates: <span id="draws">0</span></p>
+        </div>
+        <button id="reset">Reiniciar Juego</button>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
