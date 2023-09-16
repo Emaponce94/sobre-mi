@@ -22,6 +22,7 @@ const ResultModalContainer = styled.div`
 
 // eslint-disable-next-line no-unused-vars
 const ResultModalContent = styled.div`
+
   background-color: white; // Establece el color de fondo del componente a blanco //
   padding: 20px;  //Agrega espacio de relleno alrededor del contenido del componente //
   border-radius: 10px; // Establece un radio de borde redondeado para el componente
